@@ -12,7 +12,7 @@ from scipy.interpolate import griddata
 
 # Load the trained model
 import os
-model = joblib.load(os.path.join("models", "XGBoost.pkcls"))
+model = joblib.load(os.path.join("Test_XGBoost", "XGBoost.pkcls"))
 
 # Set page config and title
 st.set_page_config(page_title="Reservoir Inflow Predictor", layout="wide")
