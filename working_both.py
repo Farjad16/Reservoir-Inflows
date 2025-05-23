@@ -10,7 +10,7 @@ from streamlit_extras.let_it_rain import rain
 from scipy.interpolate import griddata
 
 # Load the trained model
-model = joblib.load("CatBoost.pkcls")
+model = joblib.load("XGBoost.pkcls")
 
 # Set page config and title
 st.set_page_config(page_title="Reservoir Inflow Predictor", layout="wide")
@@ -170,7 +170,7 @@ with info_tab:
     This tab provides helpful insights and visual summaries for better interpretation:
 
     - **Input Parameters**: 70 input features from 14 stations (5 parameters each)
-    - **Model Used**: CatBoost ( Gradient Boosting)
+    - **Model Used**: XGBoost ( Gradient Boosting)
     - **Prediction Target**: Daily reservoir inflow at Tarbela Dam (m³/s)
 
     ### 📊 Summary Statistics
@@ -189,4 +189,4 @@ with info_tab:
     """)
 
 st.markdown("---")
-st.markdown("Made by Group No 10 Batch 2021-2025 | Model: CatBoost")
+st.markdown("Made by Group No 10 Batch 2021-2025 | Model: XGBoost")
