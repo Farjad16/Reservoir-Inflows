@@ -10,7 +10,7 @@ from streamlit_extras.let_it_rain import rain
 from scipy.interpolate import griddata
 
 # Load the trained model
-model = joblib.load("Test_XGBoost/XGBoost.pkcls")
+model = joblib.load("XGBoost.pkcls")
 
 # Set page config and title
 st.set_page_config(page_title="Reservoir Inflow Predictor", layout="wide")
