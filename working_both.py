@@ -11,6 +11,7 @@ from streamlit_extras.let_it_rain import rain
 from scipy.interpolate import griddata
 
 # Load the trained model
+import os
 model = joblib.load(os.path.join("models", "XGBoost.pkcls"))
 
 # Set page config and title
