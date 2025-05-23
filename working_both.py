@@ -5,12 +5,13 @@ import numpy as np
 import time
 import plotly.express as px
 import plotly.graph_objects as go
+import os
 from streamlit_extras.metric_cards import style_metric_cards
 from streamlit_extras.let_it_rain import rain
 from scipy.interpolate import griddata
 
 # Load the trained model
-model = joblib.load("XGBoost.pkcls")
+model = joblib.load(os.path.join("models", "XGBoost.pkcls"))
 
 # Set page config and title
 st.set_page_config(page_title="Reservoir Inflow Predictor", layout="wide")
